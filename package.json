@@ -1,0 +1,25 @@
+{
+  "name": "cmui-zero",
+  "version": "0.1.0",
+  "homepage": "https://github.com/CMUI/zero",
+  "author": "cssmagic <cssmagic.cn@gmail.com>",
+  "description": "HTML5 CSS reset in Stylus.",
+  "main": "dist/zero.css",
+  "keywords": [
+    "css",
+    "reset"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "dist": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "normalize.css": "^5.0.0"
+  },
+  "devDependencies": {
+    "gulp": "github:gulpjs/gulp#4.0",
+    "del": "1.*",
+    "gulp-stylus": "2.*"
+  }
+}
