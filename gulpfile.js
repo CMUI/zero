@@ -11,21 +11,20 @@ const myPath = {
 }
 const FILENAME = 'zero'
 
-gulp.task('clean', function (cb) {
-	del([
+gulp.task('clean', function () {
+	return del([
 		path.join(myPath.dist, '*.*'),
-	], {
-		force: true
-	}, function (err, deletedFiles) {
+	]).then(function (deletedFiles) {
 		var infoTitle = '[clean] deleted: '
 		if (deletedFiles.length) {
 			console.log(infoTitle)
-			console.log(deletedFiles.join('\n'))
+			deletedFiles.forEach(function (item) {
+				item = path.relative(__dirname, item)
+				console.log('  - ' + item)
+			})
 		} else {
 			console.log(infoTitle + '(no files).')
 		}
-
-		cb()
 	})
 })
 
