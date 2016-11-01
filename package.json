@@ -1,6 +1,6 @@
 {
   "name": "cmui-zero",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/CMUI/zero",
   "author": "cssmagic <cssmagic.cn@gmail.com>",
   "description": "HTML5 CSS reset in Stylus.",
@@ -12,6 +12,7 @@
   "license": "MIT",
   "scripts": {
     "dist": "gulp",
+    "prepublish": "npm run dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
