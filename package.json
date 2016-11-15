@@ -1,6 +1,6 @@
 {
   "name": "cmui-zero",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/CMUI/zero",
   "author": "cssmagic <cssmagic.cn@gmail.com>",
   "description": "HTML5 CSS reset in Stylus.",
